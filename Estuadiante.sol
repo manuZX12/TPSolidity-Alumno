@@ -23,6 +23,11 @@ contract Alumnado {
         return Apellido;
     }
 
+     function nombre_completo() public view returns (string memory, string memory)
+    {
+        return (Nombre, Apellido);   
+    }
+
     function curso() public view returns (string memory)
     {
         return Curso;
